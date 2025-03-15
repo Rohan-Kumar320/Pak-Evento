@@ -10,9 +10,7 @@ import Footer from './Components/Footer';
 import Gallery from './Pages/Gallery';
 import OurStories from './Pages/Stories';
 import AdminDashboard from './Pages/AdminDashboard';
-import DashboardHeader from './Components/AdminDashboard/DashboardHeader';
-import DashboardFooter from './Components/AdminDashboard/DashboardFooter';
-import { CateringBookingForm, DecorationBookingForm, EventPlanningForm } from './Pages/services';
+import { CateringBookingForm, DecorationBookingForm, EventPlanningForm } from './Pages/ServicesEvents';
 
 const Layout = ({ children }) => {
     const location = useLocation();
