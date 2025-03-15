@@ -47,9 +47,15 @@ const Navbar = () => {
                 isDropdownOpen ? 'block' : 'hidden'
               } group-hover:block transition-all duration-300 ease-in-out text-slate-700`}
             >
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Event Planning</li>
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Catering</li>
-              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Decorations</li>
+              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+              <Link to="/eventplan">Event Planning</Link>
+                </li>
+              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+              <Link to="/catering">Catering</Link>
+                </li>
+              <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+              <Link to="/decoration">Decoration</Link>
+                </li>
             </ul>
           </li>
           <li className="hover:text-blue-600 cursor-pointer transition duration-300">

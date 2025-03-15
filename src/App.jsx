@@ -12,6 +12,7 @@ import OurStories from './Pages/Stories';
 import AdminDashboard from './Pages/AdminDashboard';
 import DashboardHeader from './Components/AdminDashboard/DashboardHeader';
 import DashboardFooter from './Components/AdminDashboard/DashboardFooter';
+import { CateringBookingForm, DecorationBookingForm, EventPlanningForm } from './Pages/services';
 
 const Layout = ({ children }) => {
     const location = useLocation();
@@ -36,6 +37,9 @@ const App = () => {
           <Route path='/contact' element={<ContactUs />} />
           <Route path='/gallery' element={<Gallery />} />
           <Route path='/stories' element={<OurStories />} />
+          <Route path='/eventplan' element={<EventPlanningForm />} />
+          <Route path='/catering' element={<CateringBookingForm />} />
+          <Route path='/decoration' element={<DecorationBookingForm/>} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Registration />} />
           <Route path='/admin' element={<AdminDashboard />} />
