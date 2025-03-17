@@ -1,24 +1,25 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Cards = () => {
   const details = [
     {
       id: 1,
       name: "Wedding Planning",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, aut! Dolore animi libero quae sunt cum. Vitae est veritatis unde voluptatibus quas expedita repellat minima",
-      image: "Images/SliderImg3.jpeg",
+      description: "We plan elegant and memorable weddings, offering complete event coordination, decoration, and catering. Let us make your dream day flawless and unforgettable.",
+      image: "Images/wedding.jpg",
     },
     {
       id: 2,
       name: "Corporate Events",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, aut! Dolore animi libero quae sunt cum. Vitae est veritatis unde voluptatibus quas expedita repellat minima",
-      image: "Images/SliderImg3.jpeg",
+      description: "Our corporate event planning services ensure that your business gatherings run smoothly. From conferences to gala dinners, we handle every detail with precision.",
+      image: "Images/gallery1.jpg",
     },
     {
       id: 3,
       name: "Catering Service",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, aut! Dolore animi libero quae sunt cum. Vitae est veritatis unde voluptatibus quas expedita repellat minima",
-      image: "Images/SliderImg3.jpeg",
+      description: "Delight your guests with gourmet cuisine crafted by our expert chefs. We offer diverse menu options to suit any event or dietary requirement.",
+      image: "Images/cateringservice.jpeg",
     },
   ]
   return (
@@ -54,7 +55,7 @@ const Cards = () => {
           <h5 className="text-xl font-bold mb-2 text-white">{item.name}</h5>
           <p className="text-gray-300 text-sm">{item.description}</p>
           <button className="border-2 mt-4 px-4 py-2 text-white hover:text-cyan-300 transition">
-            View Details
+            <Link to={`/viewdetail/${item.id}`}>View Detail</Link>
           </button>
         </div>
       </div>

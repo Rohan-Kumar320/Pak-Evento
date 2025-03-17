@@ -7,7 +7,7 @@ import { FaSnapchat } from "react-icons/fa";
 const Footer = () => {
   return (
     <>
-        <div className=" bg-slate-400">
+        <div className="bg-slate-600 text-slate-300">
                 <div className='flex flex-col justify-center md:flex-row md:justify-evenly items-center p-4'>
                     <div className='w-64'>
                         <h1 className='text-center text-xl md:text-2xl md:text-start font-bold font-roboto'>Pak Evento</h1>
