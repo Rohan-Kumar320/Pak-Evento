@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 const blogData = {
@@ -29,6 +29,11 @@ const BlogDetails = () => {
     const { id } = useParams();
     const blog = blogData[id];
     const [showFullContent, setShowFullContent] = useState(false);
+
+    // Scroll to top on page load
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const handleReadMore = () => {
         setShowFullContent(true);
